@@ -37,9 +37,9 @@ def number_to_full_month_name(integer)
     return "February"
   elsif (integer == 3)
     return "March"
-  elsif (integer ==4)
+  elsif (integer == 4)
     return "April"
-  elsif (integer ==5)
+  elsif (integer == 5)
     return "May"
   elsif (integer == 6)
     return "June"
@@ -67,9 +67,9 @@ def number_to_short_month_name(integer)
     return "Feb"
   elsif (integer == 3)
     return "Mar"
-  elsif (integer ==4)
+  elsif (integer == 4)
     return "Apr"
-  elsif (integer ==5)
+  elsif (integer == 5)
     return "May"
   elsif (integer == 6)
     return "Jun"
@@ -98,9 +98,10 @@ end
 
 def volume_of_sphere(radius)
   volume = 4.0 / 3 * ((Math::PI) * (radius ** 3))
-  p volume
-  p Math::PI
   return volume
 end
 
-    # volume = 4/3 pi r^3
+def fahrenheit_to_celsius(fahrenheit)
+  celsius = (fahrenheit - 32) * 5.0 / 9
+  return celsius
+end
